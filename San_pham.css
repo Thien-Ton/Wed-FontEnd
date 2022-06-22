@@ -1,0 +1,322 @@
+body {
+    max-width: 100%;
+    background-color: rgb(1, 1, 4);
+}
+
+#header {
+    max-width: 100%;
+    background-color: rgb(1, 1, 4);
+    height: auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.logo a{
+    padding-left: 15px;
+    color: rgb(126, 254, 184);
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.menu {
+    display: flex;
+    justify-items: center;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+
+.menu li.active {
+    border-radius: 1rem;
+}
+
+.header-search {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 250px; 
+    border: 1px solid #111;
+}
+
+.menu li {
+    padding: 0 20px;
+    display: block;
+    position: relative;
+
+    
+}
+.menu li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+    text-decoration: none;
+    color: rgb(126, 254, 184);
+    font-size: 20px;
+    
+}
+
+.menu li:hover {
+    background: yellow;
+    color: rgb(255, 0, 0);
+    border-radius: 1rem;
+}
+
+.menu li:hover>a {
+    background: yellow;
+    color: rgb(255, 0, 0);
+    border-radius: 1rem;
+}
+
+.search-input {
+    width: 200px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    padding: 8px 8px;
+}
+
+.menu ul.sub-menu {
+    position: absolute;
+    padding: 15px 0px;
+    display: none;
+}
+
+.menu li:hover>ul.sub-menu {
+    display: block;
+}
+
+.menu ul.sub-menu li a {
+    padding: 15px 10px;
+    width: 120px;
+    display: flex;
+    border-bottom: 1px solid #111;
+    right: 100px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto ;
+}
+
+.section img {
+    width: 100%;
+}
+
+.products-smartphone {
+    background-image: url(https://kmobileshop.com/uploads/Files/concept-iphone-12-1.jpg);
+    background-size: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-smartphone li {
+    flex-basis: 25% ;
+    padding: 10px 15px ;
+    box-sizing: border-box;
+}
+
+.products-smartphone li img {
+    background-color: #fff;
+    padding-top: 30px;
+    max-width: 100% ;
+    height: auto;
+    border-radius:10px 10px 0px 0px;
+}
+
+.products-top {
+    position: relative;
+    overflow: hidden;
+}
+
+.products-infor {
+    background: #fff;
+    border-radius: 0px 0px 5px 5px;
+    height: 100px;
+}
+
+.products-display {
+    display: block;
+}
+
+.products-smartphone li:hover .products-top .products-display img {
+    filter: opacity(80%)
+}
+
+.products-top a.buy-now {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: rgb(156, 161, 255);
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    transition: 0.25s ease-in-out ;
+    opacity: 0.85;
+}
+
+.products-smartphone li:hover a.buy-now {
+    bottom: 0px;
+
+}
+
+.products-infor {
+    padding: 50px 0px;
+}
+
+.products-infor a{
+    display: block;
+    text-decoration: none;
+}
+
+.products-category {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: rgb(203, 203, 203);
+    padding: 3px 0px;
+    text-align: center;
+}
+
+.products-name {
+    color: rgb(51, 1, 251);
+    padding: 3px 0px;
+    text-align: center;
+}
+
+.products-price {
+    color: #111;
+    padding: 2px 0px ;
+    font-weight: 600;
+    text-align: center;
+}
+
+.products-display img {
+    width: 100%;
+}
+
+.products-Ipad {
+    background-image: url(https://ijunkie.com/wp-content/uploads/2022/03/capture_044_08032022_234641.jpg);
+    background-size: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-Ipad li {
+    flex-basis: 25% ;
+    padding: 10px 15px ;
+    box-sizing: border-box;
+}
+
+.products-Ipad li img {
+    background-color: #fff;
+    padding-top: 30px;
+    max-width: 100% ;
+    height: auto;
+    border-radius:10px 10px 0px 0px;
+}
+
+.products-Ipad li:hover .products-top .products-display img {
+    filter: opacity(80%)
+}
+
+.products-Ipad li:hover a.buy-now {
+    bottom: 0px;
+
+}
+
+.products-laptop {
+    background-image: url(https://cdn.tgdd.vn/Products/Images/44/247312/Slider/acer-nitro-5-gaming-an515-57-5831-i5-nhqdgsv003-270721-1044371.jpg);
+    background-size: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-laptop li {
+    flex-basis: 25% ;
+    padding: 10px 15px ;
+    box-sizing: border-box;
+}
+
+.products-laptop li img {
+    background-color: #fff;
+    padding-top: 30px;
+    max-width: 100% ;
+    height: auto;
+    border-radius:10px 10px 0px 0px;
+}
+
+.products-laptop li:hover .products-top .products-display img {
+    filter: opacity(80%)
+}
+
+.products-laptop li:hover a.buy-now {
+    bottom: 0px;
+
+}
+
+footer {
+    background-color: #fff;
+}
+
+.customer-support {
+    border-top: 2px solid rgb(152, 186, 246);
+    display:flex ;
+}
+
+
+.customer-support li{
+    list-style: none;
+    padding: 10px 0px;
+    display: block;
+    
+}
+
+.customer-support li a {
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    line-height: 1rem;
+    padding: 0.365rem 0.75rem 0px 0px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    user-select: none;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    text-align: left;
+    text-decoration: none;
+    max-width: initial;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.store-information {
+    background-color: #e9edf2;
+    width: 100%;
+    padding: 6px 30px;
+    box-sizing: border-box;
+    column-count: 2;
+}
